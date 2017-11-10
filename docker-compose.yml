@@ -1,0 +1,11 @@
+version: "3"
+services:
+  musicbot:
+    image: vkanopelko/muzzaka_bot:dev
+    environment:
+      - BOT_NAME=muzzaka
+      - API_TOKEN=401053463:AAHl3eQj3JaONCwNqh3Jnu4Ee6J7mhUIqvI
+      - BOTAN_TOKEN=Optional botan token
+      - MONGO_HOST=mongo
+  mongo:
+    image: mongo
